@@ -1,0 +1,18 @@
+<div class="grid">
+  <div  class="grid-item grid-item-1">
+    
+  <div class="grid-content">
+    <h1>{{nota.titulo}}</h1>
+    <p>{{nota.cuerpo}}</p>
+    <p *ngIf="nota.terminada"><mat-icon>check_box</mat-icon></p>
+    <p *ngIf="!nota.terminada"><mat-icon>error</mat-icon></p>
+
+    <p>{{nota.fechaActualizacion}}</p>
+    <a (click)="eliminarNota(nota.idNota)"><mat-icon>delete_outline</mat-icon></a>
+
+    <button (click)="editarNota(nota)" >Editar</button>
+    <button style="float: right;">Terminar</button>
+  </div>
+ </div> 
+
+</div>

@@ -1,0 +1,5 @@
+<div class="list">
+    <div class="notas">
+       <app-nota (idNotaMsg)="remove($event)" *ngFor="let nota of notas" [nota] = "nota"></app-nota>
+    </div>
+</div>

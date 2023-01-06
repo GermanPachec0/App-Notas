@@ -6,7 +6,7 @@
             class="img-fluid" alt="Sample image">
         </div>
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 " style="position: absolute; right: 0; bottom: 40%;">
-          <form ngNativeValidate (ngSubmit)="enviarDatos()" [formGroup]="formLogin">
+          <form ngNativeValidate (ngSubmit) = "formSubmit()" [formGroup]="formLogin">
             <!-- Email input -->
             <div class="form-outline mb-4">
               <label class="form-label" for="form3Example3">Email address</label>

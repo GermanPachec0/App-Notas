@@ -1,0 +1,70 @@
+HTML CSSResult Skip Results Iframe
+EDIT ON
+body{
+  background-color:#ffcccc;
+}
+.grid{
+  width:800px;
+  height:500px;
+  background-color:#ccffff;
+  margin:20px auto 0;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.grid-item {
+  height: 500px;
+  box-sizing: border-box;
+  position: relative;
+  transition: .2s ease;
+  opacity: .9;
+  
+}
+.grid-item-1 {
+  background: url(https://cdn.pixabay.com/photo/2021/03/26/08/11/note-6125172_960_720.png)no-repeat center center;
+  background-size: cover;
+
+}
+
+.grid-content {
+  position: absolute;
+  bottom: 0;
+  width: 180px;
+  height: 150px;
+  background:#ccffff;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.grid-item:hover {
+  box-shadow: 0px 30px 46px -18px rgba(0,0,0,1);
+-webkit-box-shadow: 0px 30px 46px -18px rgba(0,0,0,1);
+-moz-box-shadow: 0px 30px 46px -18px rgba(0,0,0,1);
+  margin-top: -20px;
+  opacity: 3;
+}
+h1{
+  text-align:center;
+  font-size:20px;
+  margin-top:10px;
+}
+p{
+  text-align:center;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+
+  padding: 0 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: bold;
+  transition: .5s ease;
+}
+
+a:hover {
+  background: wheat;
+}
+
+

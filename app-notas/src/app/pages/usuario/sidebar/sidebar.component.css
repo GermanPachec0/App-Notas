@@ -1,0 +1,36 @@
+
+.card{
+
+    width: 35vh;
+    margin-top: -2rem;
+    background-color: #393C41;
+    display: grid;
+    float: left;
+    height: 44em;
+    
+}
+
+button{
+    background-color: #393C41;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    display: grid;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover{
+    background-color: #8198BB;
+    opacity: 0.5;
+}
+
+
+
+.card-body button{
+        margin-top:20%;
+        position: relative;
+        
+
+}
+
