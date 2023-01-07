@@ -7,7 +7,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { NavBarComponent } from './header/nav-bar/nav-bar.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { authInterceptorProviders } from './services/login/AuthInterceptor';
 import { NotaComponent } from './components/nota/nota.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
@@ -24,6 +24,7 @@ import { ListaNotasComponent } from './pages/usuario/lista-notas/lista-notas.com
 import { ProfileComponent } from './pages/usuario/profile/profile.component';
 import { SidebarComponent } from './pages/usuario/sidebar/sidebar.component';
 import { EditarNotaComponent } from './pages/usuario/editar-nota/editar-nota.component';
+import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
 
 
 
@@ -54,7 +55,10 @@ import { EditarNotaComponent } from './pages/usuario/editar-nota/editar-nota.com
     MatCardModule,
     MatToolbarModule,
     MatSnackBarModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule,
+    FormsModule,
+    NgxPaginationModule
     
   ],
   providers: [authInterceptorProviders],

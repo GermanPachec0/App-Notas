@@ -18,7 +18,7 @@ const routes: Routes = [
         {path:'lista-notas',component:ListaNotasComponent},
         {path:'profile',component:ProfileComponent},
         {path:'sidebar',component:SidebarComponent},
-        {path:'editar-nota',component:EditarNotaComponent}
+        {path:'editar-nota/:id',component:EditarNotaComponent}
 
 
     ]

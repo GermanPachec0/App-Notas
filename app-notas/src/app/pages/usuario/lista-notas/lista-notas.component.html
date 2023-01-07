@@ -1,5 +1,10 @@
 <div class="list">
     <div class="notas">
-       <app-nota (idNotaMsg)="remove($event)" *ngFor="let nota of notas" [nota] = "nota"></app-nota>
+       <app-nota (idNotaMsg)="remove($event)" *ngFor="let nota of notas | paginate: { itemsPerPage: 6, currentPage: page }" [nota] = "nota"></app-nota>
+    </div>
+    <br>
+    <br>
+    <div style="text-align: center;">
+    <pagination-controls  (pageChange)="page = $event" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
     </div>
 </div>

@@ -10,7 +10,7 @@
     <p>{{nota.fechaActualizacion}}</p>
     <a (click)="eliminarNota(nota.idNota)"><mat-icon>delete_outline</mat-icon></a>
 
-    <button (click)="editarNota(nota)" >Editar</button>
+    <button [routerLink]="'../editar-nota/'+nota.idNota" >Editar</button>
     <button style="float: right;">Terminar</button>
   </div>
  </div> 

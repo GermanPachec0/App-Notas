@@ -27,4 +27,8 @@ public delete(id:any){
  public createNota(nota:Nota){
   return this.http.post<Nota>('/api/nota/create',nota);
  }
+
+ public getNotaById(id:any){
+  return this.http.get('/api/notas/'+id);
+ }
 }

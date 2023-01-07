@@ -9,7 +9,9 @@ import { NotasService } from 'src/app/services/notas/notas.service';
 })
 export class ListaNotasComponent implements OnInit {
   notas : Nota[] = []
-  
+
+  public page !: number;
+ 
   constructor(private notaService:NotasService) { }
 
   ngOnInit(): void {
@@ -26,3 +28,5 @@ export class ListaNotasComponent implements OnInit {
   }
 
 }
+
+//https://api.letsbit.io/api/v1/lb/payments/admin/withdraws/actions
